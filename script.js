@@ -11,4 +11,5 @@ function validateWholeForm() {
 
 function validateBoosters() {
   const boosters = document.getElementById("boosterCount");
+  while (boosters.value < 1 || boosters.value > 10) {}
 }
