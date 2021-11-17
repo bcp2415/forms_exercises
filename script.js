@@ -1,10 +1,17 @@
 window.addEventListener("load", init);
 
 function init() {
-    const submitButton = document.getElementById("submitButton");
-    submitButton.addEventListener("click", validate);
+  console.log("init called.");
+  const submitButton = document.getElementById("submitButton");
+  submitButton.addEventListener("click", validateWholeForm);
 }
 
-function validate() {
-    
+function validateWholeForm() {
+  console.log("validateWholeForm called.");
+  validateBoosters();
+}
+
+function validateBoosters() {
+  const boosters = document.getElementById("boosterCount");
+  console.log(boosters.value);
 }
