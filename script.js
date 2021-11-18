@@ -11,5 +11,9 @@ function validateWholeForm() {
 
 function validateBoosters() {
   const boosters = document.getElementById("boosterCount");
-  while (boosters.value < 1 || boosters.value > 10) {}
+  if (boosters.value < 1 || boosters.value > 10) {
+    window.alert(
+      "Please enter a value for the number of Rocket Boosters from 1 to 10."
+    );
+  }
 }
